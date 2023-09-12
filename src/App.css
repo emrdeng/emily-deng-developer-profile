@@ -1,0 +1,414 @@
+/* ////////////// INTRODUCTION SECTION CSS ////////////// */
+/* Default order for larger screens */
+.left-side {
+    order: 1;
+}
+
+.right-side {
+    order: 2;
+}
+
+.tech-section {
+    order: 3;
+}
+
+/* Change order for screens 950px and below */
+@media (max-width: 950px) {
+    .left-side,
+    .right-side {
+        width: 100% !important;
+    }
+
+    .right-side {
+        order: 1;
+    }
+
+    .left-side {
+        order: 2;
+    }
+
+    .tech-section {
+        order: 3;
+    }
+}
+
+/* Decorative line next to Technical Profile */
+.technicalProfileParagraph {
+    position: relative; /* Needed for absolutely positioned children */
+    display: inline-block; /* Makes it as wide as its content */
+  }
+  
+  /* Always a horizontal line below the text */
+  .technicalProfileParagraph::after {
+    content: ''; /* Empty content is required for pseudo-elements */
+    display: block;
+    width: 100%; /* Width of your horizontal line */
+    height: 2px; /* Height of your horizontal line */
+    background-color: #000; /* Color of your line */
+    position: absolute;
+    bottom: -10px; /* Spacing from the bottom of the text. Adjust as needed */
+    left: 0;
+  } 
+  
+@media (max-width: 3000px) {
+    .passionProjects {
+      color: #147efb;
+    }
+    .introductoryFlexbox {
+      height: 100vh !important;
+    }
+    .introductionTitle {
+      font-size: 6rem !important;
+    }
+    .introductionParagraph,
+    .technicalProfileParagraph {
+      font-size: 1.5rem !important;
+    }
+    .responsive-avatar {
+      width: 55% !important;
+    }
+    .IntroductionContainer {
+      padding: 1% 20% !important; 
+    }
+}
+
+@media (max-width: 2000px) {
+    .introductoryFlexbox {
+      height: 100vh !important;
+    }
+    .introductionTitle {
+      font-size: 4rem !important;
+    }
+    .introductionParagraph,
+    .technicalProfileParagraph {
+      font-size: 1.2rem !important;
+    }
+    .responsive-avatar {
+      width: 60% !important; 
+    }
+    .IntroductionContainer {
+      padding: 8% 15% !important; 
+    }
+}
+
+@media (max-width: 1450px) {
+  .projectImageContainer {
+    width: 95% !important;
+    height: 95% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .projectDetailsGrid {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .projectImageContainer {
+    width: 100% !important;
+  }
+  .projectTitle{
+    font-size: 1.5rem !important;
+  }
+  .projectDescription {
+    font-size: 0.9rem !important;
+  }
+  .projectTechNames {
+    font-size: 0.9rem !important;
+  }
+  .linksTypography {
+    font-size: 1rem !important;
+  }
+  .limitNotice {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+    .responsive-avatar {
+      width: 60% !important; 
+    }
+    .IntroductionContainer {
+      padding: 10% 2% !important; 
+    }
+    .overallProjectsContainer {
+      padding: 0 1.5rem !important;
+    }
+    .projectImageGrid {
+      padding: 0 !important;
+    }
+    .projectDetailsGrid {
+      padding-right: 0 !important;
+      padding-left: 40px !important;
+    }
+}
+
+@media (max-width: 951px) {
+    .introductoryFlexbox {
+      height: 120vh !important;
+    }
+    .introductionTitleContainer,
+    .introductionParagraph,
+    .technicalProfileParagraph {
+      text-align: center !important;
+    }
+    .linksSection{
+      text-align: center !important;
+      padding: 0 !important;
+    }
+    .responsive-avatar {
+      width: 40% !important; 
+      height: 20% !important;
+    }
+    .IntroductionContainer {
+      padding: 5% 10% !important; 
+    }
+    .techProfileParagraph,
+    .technicalProfie {
+      padding-top: none !important
+    }
+    .techRow {
+      text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+  .projectCardContainer {
+    text-align: center !important;
+  }
+  .projectCardGrid {
+    text-align: center !important;
+  }
+  .projectImageContainer {
+    width: auto !important; 
+    height: auto !important;
+    text-align: center !important;
+    margin-right: 0 !important;
+  }
+  .projectDetailsGrid {
+    padding: 15px 24px !important;
+  }
+  .limitNotice {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .introductoryFlexbox {
+    height: 100vh !important;
+  }
+  .responsive-avatar {
+    width: 50% !important; 
+    height: 40% !important;
+  }
+  .introductionTitle {
+    font-size: 2.2rem !important;
+    text-align: center !important;
+  }
+  .introductionParagraph,
+  .technicalProfileParagraph {
+    text-align: center !important;
+    font-size: 0.8rem !important;
+  }
+  .techCardImages {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .techCardCircle {
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+  }
+  .projectTechNameBoxes {
+    padding: 0.9rem !important;
+  }
+  .projectTechNames {
+    font-size: 0.75rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .introductoryFlexbox {
+    height: 85vh !important;
+  }
+  .introductionTitle {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .introductionParagraph,
+  .technicalProfileParagraph {
+    text-align: center !important;
+    font-size: 1rem !important;
+  }
+  .linksSection{
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .responsive-avatar {
+    width: 60% !important; 
+    height: 40% !important;
+  }
+  .IntroductionContainer {
+    padding: 5% 10% !important; 
+  }
+  .techProfileParagraph,
+  .technicalProfie {
+    padding-top: none !important
+  }
+  .techRow {
+    text-align: center;
+  }
+  .techCardImages {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  .techCardCircle {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .projectImageContainer,
+  .test {
+    height: 100% !important;
+  }
+  .projectCardContainer {
+    padding: 1rem 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .projectCardGrid {
+    width: 100% !important;
+  }
+  .projectTechNames {
+    font-size: 0.75rem !important;
+  }
+  .emojiTypography {
+    font-size: 0.8em !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .introductoryFlexbox {
+    height: 100vh !important;
+  }
+  .introductionTitle {
+    font-size: 2rem !important;
+    text-align: center !important;
+  }
+  .introductionParagraph,
+  .technicalProfileParagraph {
+    text-align: center !important;
+    font-size: 0.8rem !important;
+  }
+  .linksSection{
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .responsive-avatar {
+    width: 60% !important; 
+    height: 40% !important;
+  }
+  .IntroductionContainer {
+    padding: 10% 10% !important; 
+  }
+  .techProfileParagraph,
+  .technicalProfie {
+    padding-top: none !important
+  }
+  .techRow {
+    text-align: center;
+  }
+  .emojiTypography {
+    font-size: 0.6em !important;
+  }
+  .projectDescription,
+  .linksTypography {
+    font-size: 0.85rem !important;
+  }
+  .techCardImages {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+  }
+  .techCardCircle {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .projectTechNameBoxes {
+    padding: 0.75rem !important;
+  }
+  .projectTechNames {
+    font-size: 0.7rem !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .projectDescription,
+  .linksTypography {
+    font-size: 0.8rem !important;
+  }
+  .projectTechNameBoxes {
+    padding: 0.65rem !important;
+  }
+  .projectTechNames {
+    font-size: 0.63rem !important;
+  }
+}
+
+@media (max-width: 330px) {
+  .projectCardGrid {
+    padding-left: 24px !important;
+  }
+  .projectImageContainer {
+    margin: 24px 0 !important;
+  }
+  .projectTitle {
+    font-size: 1rem !important;
+  }
+  .projectDescription {
+    font-size: 0.6rem !important;
+  }
+  .projectDetailsGrid{
+    padding: 0 !important;
+  }
+  .stack {
+    flex-direction: row;
+    flex-wrap: wrap; 
+  }
+  .projectTechNameBoxes {
+    width: auto; /* Resetting the width here */
+    box-sizing: border-box;
+    margin-bottom: 8px;
+  } 
+  .links {
+    margin-top: 8px !important;
+  }
+  .linksTypography{
+    font-size: 0.7rem !important;
+  }
+  .limitNotice {
+    font-size: 0.6rem !important;
+    margin-top: 12px !important;
+  }
+  .mailIconCircle {
+    height: 1.5rem !important;
+    width: 1.5rem !important
+  }
+  .mailIcon {
+    font-size: 1.2rem !important
+  }
+}
+
+@media (max-width: 915px) and (min-height: 1024px) {
+  .introductoryFlexbox {
+    height: 90vh !important;
+  }
+}
+
+@media (max-width: 915px) and (min-height: 1200px) {
+  .introductoryFlexbox {
+    height: 80vh !important;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .introductoryFlexbox {
+    height: 140vh !important;
+  }
+}
